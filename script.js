@@ -1069,6 +1069,1167 @@ const flashcards = [
     sentence: "映画の撮影が来月始まる。",
     sentenceReading: "えいが の さつえい が らいげつ はじまる。",
     sentenceMeaning: "Pengambilan gambar film akan dimulai bulan depan."
+  },
+  {
+    part: 4,
+    kanji: "収穫",
+    reading: "しゅうかく",
+    meaning: "panen, hasil panen, hasil usaha",
+    sentence: "今年の稲の収穫は豊かだった。",
+    sentenceReading: "ことし の いね の しゅうかく は ゆたか だった。",
+    sentenceMeaning: "Hasil panen padi tahun ini melimpah."
+  },
+  {
+    part: 4,
+    kanji: "勢い",
+    reading: "いきおい",
+    meaning: "momentum, tenaga, kekuatan, semangat, laju",
+    sentence: "チームは勢いに乗って勝利した。",
+    sentenceReading: "チーム は いきおい に のって しょうり した。",
+    sentenceMeaning: "Tim meraih kemenangan berkat momentum mereka."
+  },
+  {
+    part: 4,
+    kanji: "組織",
+    reading: "そしき",
+    meaning: "organisasi, struktur, jaringan",
+    sentence: "会社の組織は効率的に運営されている。",
+    sentenceReading: "かいしゃ の そしき は こうりつてき に うんえい されている。",
+    sentenceMeaning: "Organisasi perusahaan dijalankan secara efisien."
+  },
+  {
+    part: 4,
+    kanji: "世の中",
+    reading: "よのなか",
+    meaning: "dunia, masyarakat, keadaan sosial",
+    sentence: "世の中には色々な考え方がある。",
+    sentenceReading: "よ の なか に は いろいろ な かんがえかた が ある。",
+    sentenceMeaning: "Di dunia ini, ada berbagai macam cara berpikir."
+  },
+  {
+    part: 4,
+    kanji: "講義",
+    reading: "こうぎ",
+    meaning: "kuliah, ceramah, pengajaran",
+    sentence: "大学の講義は毎週月曜日にある。",
+    sentenceReading: "だいがく の こうぎ は まいしゅう げつようび に ある。",
+    sentenceMeaning: "Kuliah di universitas diadakan setiap hari Senin."
+  },
+  {
+    part: 4,
+    kanji: "招待",
+    reading: "しょうたい",
+    meaning: "undangan, mengundang",
+    sentence: "結婚式に友達を招待した。",
+    sentenceReading: "けっこんしき に ともだち を しょうたい した。",
+    sentenceMeaning: "Saya mengundang teman ke pernikahan."
+  },
+  {
+    part: 4,
+    kanji: "清潔",
+    reading: "せいけつ",
+    meaning: "bersih, higienis, suci",
+    sentence: "手を清潔に保つことが大切だ。",
+    sentenceReading: "て を せいけつ に たもつ こと が たいせつ だ。",
+    sentenceMeaning: "Menjaga tangan tetap bersih itu penting."
+  },
+  {
+    part: 4,
+    kanji: "姿勢",
+    reading: "しせい",
+    meaning: "postur, sikap tubuh, sikap (mental)",
+    sentence: "正しい姿勢で座ることは健康に良い。",
+    sentenceReading: "ただしい しせい で すわる こと は けんこう に よい。",
+    sentenceMeaning: "Duduk dengan postur yang benar baik untuk kesehatan."
+  },
+  {
+    part: 4,
+    kanji: "逃亡",
+    reading: "とうぼう",
+    meaning: "pelarian, melarikan diri",
+    sentence: "犯人は警察から逃亡した。",
+    sentenceReading: "はんにん は けいさつ から とうぼう した。",
+    sentenceMeaning: "Tersangka melarikan diri dari polisi."
+  },
+  {
+    part: 4,
+    kanji: "真剣",
+    reading: "しんけん",
+    meaning: "serius, sungguh-sungguh, pedang asli",
+    sentence: "彼は仕事に真剣に取り組んでいる。",
+    sentenceReading: "かれ は しごと に しんけん に とりくんでいる。",
+    sentenceMeaning: "Dia serius menangani pekerjaannya."
+  },
+  {
+    part: 4,
+    kanji: "寄付",
+    reading: "きふ",
+    meaning: "donasi, sumbangan",
+    sentence: "彼は慈善団体に寄付をした。",
+    sentenceReading: "かれ は じぜん だんたい に きふ を した。",
+    sentenceMeaning: "Dia memberikan sumbangan ke organisasi amal."
+  },
+  {
+    part: 4,
+    kanji: "即座",
+    reading: "そくざ",
+    meaning: "segera, langsung, seketika",
+    sentence: "質問に即座に答えた。",
+    sentenceReading: "しつもん に そくざ に こたえた。",
+    sentenceMeaning: "Saya menjawab pertanyaan itu segera."
+  },
+  {
+    part: 4,
+    kanji: "大幅",
+    reading: "おおはば",
+    meaning: "besar (perubahan), signifikan",
+    sentence: "売上は大幅に増加した。",
+    sentenceReading: "うりあげ は おおはば に ぞうか した。",
+    sentenceMeaning: "Penjualan meningkat secara signifikan."
+  },
+  {
+    part: 4,
+    kanji: "悔しい",
+    reading: "くやしい",
+    meaning: "menyesal, kecewa, sakit hati",
+    sentence: "試合に負けて悔しかった。",
+    sentenceReading: "しあい に まけて くやしかった。",
+    sentenceMeaning: "Aku kecewa karena kalah dalam pertandingan."
+  },
+  {
+    part: 4,
+    kanji: "幼稚",
+    reading: "ようち",
+    meaning: "kekanak-kanakan, belum dewasa",
+    sentence: "彼の行動は幼稚に見える。",
+    sentenceReading: "かれ の こうどう は ようち に みえる。",
+    sentenceMeaning: "Tindakannya terlihat kekanak-kanakan."
+  },
+  {
+    part: 4,
+    kanji: "極端",
+    reading: "きょくたん",
+    meaning: "ekstrem, berlebihan",
+    sentence: "極端な意見は議論を難しくする。",
+    sentenceReading: "きょくたん な いけん は ぎろん を むずかしく する。",
+    sentenceMeaning: "Pendapat yang ekstrem membuat diskusi sulit."
+  },
+  {
+    part: 4,
+    kanji: "圧勝",
+    reading: "あっしょう",
+    meaning: "kemenangan telak",
+    sentence: "チームは圧勝で試合に勝った。",
+    sentenceReading: "チーム は あっしょう で しあい に かった。",
+    sentenceMeaning: "Tim menang dengan telak dalam pertandingan."
+  },
+  {
+    part: 4,
+    kanji: "傷みやすい",
+    reading: "いたみやすい",
+    meaning: "mudah rusak, mudah basi, mudah memburuk",
+    sentence: "この果物は傷みやすいので早く食べてください。",
+    sentenceReading: "この くだもの は いたみやすい ので はやく たべて ください。",
+    sentenceMeaning: "Buah ini mudah rusak, jadi segera dimakan."
+  },
+  {
+    part: 4,
+    kanji: "接続",
+    reading: "せつぞく",
+    meaning: "koneksi, penyambungan, hubungan",
+    sentence: "インターネット接続が不安定だ。",
+    sentenceReading: "インターネット せつぞく が ふあんてい だ。",
+    sentenceMeaning: "Koneksi internet tidak stabil."
+  },
+  {
+    part: 4,
+    kanji: "批判",
+    reading: "ひはん",
+    meaning: "kritik, kecaman",
+    sentence: "彼の意見は批判を受けた。",
+    sentenceReading: "かれ の いけん は ひはん を うけた。",
+    sentenceMeaning: "Pendapatnya mendapat kritik."
+  },
+  {
+    part: 4,
+    kanji: "継続",
+    reading: "けいぞく",
+    meaning: "kelanjutan, keberlanjutan, terus-menerus",
+    sentence: "努力を継続することが大切だ。",
+    sentenceReading: "どりょく を けいぞく する こと が たいせつ だ。",
+    sentenceMeaning: "Melanjutkan usaha itu penting."
+  },
+  {
+    part: 4,
+    kanji: "貿易",
+    reading: "ぼうえき",
+    meaning: "perdagangan (ekspor-impor)",
+    sentence: "日本は多くの国と貿易を行っている。",
+    sentenceReading: "にほん は おおく の くに と ぼうえき を おこなっている。",
+    sentenceMeaning: "Jepang melakukan perdagangan dengan banyak negara."
+  },
+  {
+    part: 4,
+    kanji: "詳しい",
+    reading: "くわしい",
+    meaning: "rinci, detail, paham dengan baik",
+    sentence: "彼は法律に詳しい。",
+    sentenceReading: "かれ は ほうりつ に くわしい。",
+    sentenceMeaning: "Dia paham dengan baik tentang hukum."
+  },
+  {
+    part: 4,
+    kanji: "援助",
+    reading: "えんじょ",
+    meaning: "bantuan, pertolongan, dukungan",
+    sentence: "災害時に多くの援助が届いた。",
+    sentenceReading: "さいがいじ に おおく の えんじょ が とどいた。",
+    sentenceMeaning: "Banyak bantuan sampai saat bencana."
+  },
+  {
+    part: 4,
+    kanji: "帰省",
+    reading: "きせい",
+    meaning: "pulang ke kampung halaman",
+    sentence: "正月に実家へ帰省した。",
+    sentenceReading: "しょうがつ に じっか へ きせい した。",
+    sentenceMeaning: "Saya pulang ke rumah orang tua saat Tahun Baru."
+  },
+  {
+    part: 4,
+    kanji: "面倒",
+    reading: "めんどう",
+    meaning: "merepotkan, ribet, kesulitan, perawatan",
+    sentence: "この手続きは面倒だ。",
+    sentenceReading: "この てつづき は めんどう だ。",
+    sentenceMeaning: "Prosedur ini merepotkan."
+  },
+  {
+    part: 4,
+    kanji: "異色",
+    reading: "いしょく",
+    meaning: "berbeda, unik, tidak biasa",
+    sentence: "彼は異色の経歴を持っている。",
+    sentenceReading: "かれ は いしょく の けいれき を もっている。",
+    sentenceMeaning: "Dia memiliki latar belakang yang unik."
+  },
+  {
+    part: 4,
+    kanji: "下降",
+    reading: "かこう",
+    meaning: "penurunan, turun",
+    sentence: "株価は昨日下降した。",
+    sentenceReading: "かぶか は きのう かこう した。",
+    sentenceMeaning: "Harga saham turun kemarin."
+  },
+  {
+    part: 4,
+    kanji: "拡充",
+    reading: "かくじゅう",
+    meaning: "perluasan, penguatan, penambahan",
+    sentence: "会社は事業を拡充している。",
+    sentenceReading: "かいしゃ は じぎょう を かくじゅう している。",
+    sentenceMeaning: "Perusahaan memperluas usahanya."
+  },
+  {
+    part: 4,
+    kanji: "著しい",
+    reading: "いちじるしい",
+    meaning: "mencolok, signifikan, luar biasa",
+    sentence: "売上は著しく増加した。",
+    sentenceReading: "うりあげ は いちじるしく ぞうか した。",
+    sentenceMeaning: "Penjualan meningkat secara signifikan."
+  },
+  {
+    part: 4,
+    kanji: "声援",
+    reading: "せいえん",
+    meaning: "sorakan dukungan, dukungan suara",
+    sentence: "観客の声援で選手たちは力を出した。",
+    sentenceReading: "かんきゃく の せいえん で せんしゅたち は ちから を だした。",
+    sentenceMeaning: "Para pemain mendapat tenaga dari sorakan dukungan penonton."
+  },
+  {
+    part: 4,
+    kanji: "破片",
+    reading: "はへん",
+    meaning: "pecahan, serpihan",
+    sentence: "ガラスの破片に気をつけてください。",
+    sentenceReading: "ガラス の はへん に きを つけて ください。",
+    sentenceMeaning: "Hati-hati dengan pecahan kaca."
+  },
+  {
+    part: 4,
+    kanji: "返品",
+    reading: "へんぴん",
+    meaning: "pengembalian barang, retur",
+    sentence: "商品を返品した。",
+    sentenceReading: "しょうひん を へんぴん した。",
+    sentenceMeaning: "Saya mengembalikan barang."
+  },
+  {
+    part: 4,
+    kanji: "豊",
+    reading: "ゆたか",
+    meaning: "kaya, melimpah, subur",
+    sentence: "この地域は自然が豊かだ。",
+    sentenceReading: "この ちいき は しぜん が ゆたか だ。",
+    sentenceMeaning: "Wilayah ini kaya akan alam."
+  },
+  {
+    part: 4,
+    kanji: "乱暴",
+    reading: "らんぼう",
+    meaning: "kasar, brutal, sembrono",
+    sentence: "彼は乱暴な態度を取った。",
+    sentenceReading: "かれ は らんぼう な たいど を とった。",
+    sentenceMeaning: "Dia bersikap kasar."
+  },
+  {
+    part: 4,
+    kanji: "弱点",
+    reading: "じゃくてん",
+    meaning: "kelemahan, titik lemah",
+    sentence: "誰にでも弱点はある。",
+    sentenceReading: "だれ に でも じゃくてん は ある。",
+    sentenceMeaning: "Semua orang punya kelemahan."
+  },
+  {
+    part: 4,
+    kanji: "勧誘",
+    reading: "かんゆう",
+    meaning: "ajakan, perekrutan, bujukan",
+    sentence: "勧誘の電話がかかってきた。",
+    sentenceReading: "かんゆう の でんわ が かかってきた。",
+    sentenceMeaning: "Telepon ajakan datang."
+  },
+  {
+    part: 4,
+    kanji: "情景",
+    reading: "じょうけい",
+    meaning: "pemandangan, adegan, suasana",
+    sentence: "情景を写真に撮った。",
+    sentenceReading: "じょうけい を しゃしん に とった。",
+    sentenceMeaning: "Saya mengambil gambar pemandangan."
+  },
+  {
+    part: 4,
+    kanji: "乏しい",
+    reading: "とぼしい",
+    meaning: "kurang, miskin, sedikit",
+    sentence: "資源が乏しい地域だ。",
+    sentenceReading: "しげん が とぼしい ちいき だ。",
+    sentenceMeaning: "Wilayah yang miskin sumber daya."
+  },
+  {
+    part: 4,
+    kanji: "介護",
+    reading: "かいご",
+    meaning: "perawatan (orang lanjut usia/sakit)",
+    sentence: "高齢者の介護は大変だ。",
+    sentenceReading: "こうれいしゃ の かいご は たいへん だ。",
+    sentenceMeaning: "Merawat orang lanjut usia itu sulit."
+  },
+  {
+    part: 5,
+    kanji: "賛否",
+    reading: "さんぴ",
+    meaning: "pro dan kontra, setuju dan menentang",
+    sentence: "その計画には賛否が分かれた。",
+    sentenceReading: "その けいかく に は さんぴ が わかれた。",
+    sentenceMeaning: "Rencana itu menimbulkan pro dan kontra."
+  },
+  {
+    part: 5,
+    kanji: "順調",
+    reading: "じゅんちょう",
+    meaning: "lancar, berjalan baik, stabil",
+    sentence: "仕事は順調に進んでいる。",
+    sentenceReading: "しごと は じゅんちょう に すすんでいる。",
+    sentenceMeaning: "Pekerjaan berjalan lancar."
+  },
+  {
+    part: 5,
+    kanji: "永久",
+    reading: "えいきゅう",
+    meaning: "abadi, permanen, selamanya",
+    sentence: "友情は永久に続く。",
+    sentenceReading: "ゆうじょう は えいきゅう に つづく。",
+    sentenceMeaning: "Persahabatan berlanjut selamanya."
+  },
+  {
+    part: 5,
+    kanji: "記憶",
+    reading: "きおく",
+    meaning: "ingatan, memori",
+    sentence: "子供の頃の記憶は鮮明だ。",
+    sentenceReading: "こども の ころ の きおく は せんめい だ。",
+    sentenceMeaning: "Ingatan masa kecil itu jelas."
+  },
+  {
+    part: 5,
+    kanji: "偉い",
+    reading: "えらい",
+    meaning: "hebat, luar biasa, terhormat, penting",
+    sentence: "彼は偉い科学者だ。",
+    sentenceReading: "かれ は えらい かがくしゃ だ。",
+    sentenceMeaning: "Dia adalah ilmuwan hebat."
+  },
+  {
+    part: 5,
+    kanji: "刺激",
+    reading: "しげき",
+    meaning: "rangsangan, stimulus, dorongan",
+    sentence: "新しい経験が刺激になる。",
+    sentenceReading: "あたらしい けいけん が しげき に なる。",
+    sentenceMeaning: "Pengalaman baru menjadi dorongan."
+  },
+  {
+    part: 5,
+    kanji: "典型的",
+    reading: "てんけいてき",
+    meaning: "khas, tipikal, representatif",
+    sentence: "これは典型的な例だ。",
+    sentenceReading: "これ は てんけいてき な れい だ。",
+    sentenceMeaning: "Ini adalah contoh yang khas."
+  },
+  {
+    part: 5,
+    kanji: "途端に",
+    reading: "とたんに",
+    meaning: "tepat setelah, seketika, begitu",
+    sentence: "家を出た途端に雨が降り出した。",
+    sentenceReading: "いえ を でた とたん に あめ が ふりだした。",
+    sentenceMeaning: "Begitu keluar rumah, hujan mulai turun."
+  },
+  {
+    part: 5,
+    kanji: "素材",
+    reading: "そざい",
+    meaning: "bahan, material, bahan mentah",
+    sentence: "この料理は素材が命だ。",
+    sentenceReading: "この りょうり は そざい が いのち だ。",
+    sentenceMeaning: "Bahan makanan ini adalah kunci."
+  },
+  {
+    part: 5,
+    kanji: "垂直",
+    reading: "すいちょく",
+    meaning: "tegak lurus, vertikal",
+    sentence: "壁が垂直に立っている。",
+    sentenceReading: "かべ が すいちょく に たっている。",
+    sentenceMeaning: "Dinding berdiri tegak lurus."
+  },
+  {
+    part: 5,
+    kanji: "住居",
+    reading: "じゅうきょ",
+    meaning: "tempat tinggal, hunian",
+    sentence: "新しい住居に引っ越した。",
+    sentenceReading: "あたらしい じゅうきょ に ひっこした。",
+    sentenceMeaning: "Saya pindah ke tempat tinggal baru."
+  },
+  {
+    part: 5,
+    kanji: "世間",
+    reading: "せけん",
+    meaning: "masyarakat, dunia luar, opini publik",
+    sentence: "世間の目を気にする。",
+    sentenceReading: "せけん の め を きに する。",
+    sentenceMeaning: "Memperhatikan pandangan masyarakat."
+  },
+  {
+    part: 5,
+    kanji: "勇ましい",
+    reading: "いさましい",
+    meaning: "gagah berani, bersemangat, heroik",
+    sentence: "勇ましい戦士たち。",
+    sentenceReading: "いさましい せんし たち。",
+    sentenceMeaning: "Para pejuang yang gagah berani."
+  },
+  {
+    part: 5,
+    kanji: "欲",
+    reading: "よく",
+    meaning: "keinginan, nafsu, hasrat",
+    sentence: "人間の欲は尽きない。",
+    sentenceReading: "にんげん の よく は つきない。",
+    sentenceMeaning: "Hasrat manusia tidak pernah habis."
+  },
+  {
+    part: 5,
+    kanji: "俳優",
+    reading: "はいゆう",
+    meaning: "aktor, pemeran",
+    sentence: "彼は有名な俳優だ。",
+    sentenceReading: "かれ は ゆうめい な はいゆう だ。",
+    sentenceMeaning: "Dia adalah aktor terkenal."
+  },
+  {
+    part: 5,
+    kanji: "診断",
+    reading: "しんだん",
+    meaning: "diagnosis, penilaian medis",
+    sentence: "医者が診断を下した。",
+    sentenceReading: "いしゃ が しんだん を くだした。",
+    sentenceMeaning: "Dokter memberikan diagnosis."
+  },
+  {
+    part: 5,
+    kanji: "等しい",
+    reading: "ひとしい",
+    meaning: "sama, setara, sebanding",
+    sentence: "二つの値は等しい。",
+    sentenceReading: "ふたつ の あたい は ひとしい。",
+    sentenceMeaning: "Kedua nilai itu sama."
+  },
+  {
+    part: 5,
+    kanji: "返却",
+    reading: "へんきゃく",
+    meaning: "pengembalian, menyerahkan kembali",
+    sentence: "本を図書館に返却した。",
+    sentenceReading: "ほん を としょかん に へんきゃく した。",
+    sentenceMeaning: "Saya mengembalikan buku ke perpustakaan."
+  },
+  {
+    part: 5,
+    kanji: "運賃",
+    reading: "うんちん",
+    meaning: "ongkos, tarif transportasi",
+    sentence: "運賃は事前に確認してください。",
+    sentenceReading: "うんちん は じぜん に かくにん して ください。",
+    sentenceMeaning: "Harap cek ongkos terlebih dahulu."
+  },
+  {
+    part: 5,
+    kanji: "離れる",
+    reading: "はなれる",
+    meaning: "menjauh, berpisah, terpisah",
+    sentence: "駅から離れた場所に住んでいる。",
+    sentenceReading: "えき から はなれた ばしょ に すんでいる。",
+    sentenceMeaning: "Saya tinggal di tempat yang jauh dari stasiun."
+  },
+  {
+    part: 5,
+    kanji: "外れる",
+    reading: "はずれる",
+    meaning: "lepas, terlepas, meleset, tidak tepat, gagal",
+    sentence: "ボタンが外れた。",
+    sentenceReading: "ボタン が はずれた。",
+    sentenceMeaning: "Kancingnya lepas."
+  },
+  {
+    part: 5,
+    kanji: "備える",
+    reading: "そなえる",
+    meaning: "mempersiapkan, melengkapi, menyediakan",
+    sentence: "災害に備える。",
+    sentenceReading: "さいがい に そなえる。",
+    sentenceMeaning: "Mempersiapkan diri menghadapi bencana."
+  },
+  {
+    part: 5,
+    kanji: "昇る",
+    reading: "のぼる",
+    meaning: "naik, mendaki, meningkat, terbit",
+    sentence: "太陽が昇る。",
+    sentenceReading: "たいよう が のぼる。",
+    sentenceMeaning: "Matahari terbit."
+  },
+  {
+    part: 5,
+    kanji: "務める",
+    reading: "つとめる",
+    meaning: "menjalankan tugas, bertugas sebagai, bekerja",
+    sentence: "会社で営業を務める。",
+    sentenceReading: "かいしゃ で えいぎょう を つとめる。",
+    sentenceMeaning: "Bertugas di bagian penjualan perusahaan."
+  },
+  {
+    part: 5,
+    kanji: "積む",
+    reading: "つむ",
+    meaning: "menumpuk, memuat, mengumpulkan, menabung (pengalaman)",
+    sentence: "経験を積むことが大事だ。",
+    sentenceReading: "けいけん を つむ こと が だいじ だ。",
+    sentenceMeaning: "Mengumpulkan pengalaman itu penting."
+  },
+  {
+    part: 5,
+    kanji: "任せる",
+    reading: "まかせる",
+    meaning: "mempercayakan, menyerahkan, membiarkan",
+    sentence: "仕事を上司に任せた。",
+    sentenceReading: "しごと を じょうし に まかせた。",
+    sentenceMeaning: "Saya menyerahkan pekerjaan kepada atasan."
+  },
+  {
+    part: 5,
+    kanji: "焦る",
+    reading: "あせる",
+    meaning: "panik, tergesa-gesa, cemas",
+    sentence: "時間がなくて焦った。",
+    sentenceReading: "じかん が なくて あせった。",
+    sentenceMeaning: "Saya panik karena waktunya sedikit."
+  },
+  {
+    part: 5,
+    kanji: "競う",
+    reading: "きそう",
+    meaning: "bersaing, berlomba, berkompetisi",
+    sentence: "選手たちは優勝を競った。",
+    sentenceReading: "せんしゅ たち は ゆうしょう を きそう た。",
+    sentenceMeaning: "Para atlet bersaing untuk menang."
+  },
+  {
+    part: 5,
+    kanji: "傾く",
+    reading: "かたむく",
+    meaning: "miring, condong, menurun, runtuh (bisnis/negara)",
+    sentence: "建物が傾いている。",
+    sentenceReading: "たてもの が かたむいている。",
+    sentenceMeaning: "Bangunan itu miring."
+  },
+  {
+    part: 5,
+    kanji: "縮める",
+    reading: "ちぢめる",
+    meaning: "memendekkan, mengecilkan, mengerutkan",
+    sentence: "距離を縮める。",
+    sentenceReading: "きょり を ちぢめる。",
+    sentenceMeaning: "Memperpendek jarak."
+  },
+  {
+    part: 5,
+    kanji: "破れる",
+    reading: "やぶれる",
+    meaning: "robek, rusak, kalah, gagal",
+    sentence: "紙が破れた。",
+    sentenceReading: "かみ が やぶれた。",
+    sentenceMeaning: "Kertasnya robek."
+  },
+  {
+    part: 5,
+    kanji: "除く",
+    reading: "のぞく",
+    meaning: "mengecualikan, menghilangkan, melihat sekilas",
+    sentence: "一部の例を除く。",
+    sentenceReading: "いちぶ の れい を のぞく。",
+    sentenceMeaning: "Kecuali beberapa contoh."
+  },
+  {
+    part: 5,
+    kanji: "戻す",
+    reading: "もどす",
+    meaning: "mengembalikan, memulihkan, mengulang",
+    sentence: "本を棚に戻す。",
+    sentenceReading: "ほん を たな に もどす。",
+    sentenceMeaning: "Mengembalikan buku ke rak."
+  },
+  {
+    part: 5,
+    kanji: "逆らう",
+    reading: "さからう",
+    meaning: "melawan, menentang, membangkang",
+    sentence: "上司の命令に逆らう。",
+    sentenceReading: "じょうし の めいれい に さからう。",
+    sentenceMeaning: "Melawan perintah atasan."
+  },
+  {
+    part: 5,
+    kanji: "責める",
+    reading: "せめる",
+    meaning: "menyalahkan, menuduh, menekan",
+    sentence: "彼を責めないでください。",
+    sentenceReading: "かれ を せめない で ください。",
+    sentenceMeaning: "Jangan menyalahkan dia."
+  },
+  {
+    part: 5,
+    kanji: "努める",
+    reading: "つとめる",
+    meaning: "berusaha keras, berupaya, mengusahakan",
+    sentence: "最善を努める。",
+    sentenceReading: "さいぜん を つとめる。",
+    sentenceMeaning: "Berusaha sebaik mungkin."
+  },
+  {
+    part: 5,
+    kanji: "隠す",
+    reading: "かくす",
+    meaning: "menyembunyikan, menutupi",
+    sentence: "秘密を隠す。",
+    sentenceReading: "ひみつ を かくす。",
+    sentenceMeaning: "Menyembunyikan rahasia."
+  },
+  {
+    part: 5,
+    kanji: "果たす",
+    reading: "はたす",
+    meaning: "menunaikan, mencapai, menyelesaikan",
+    sentence: "使命を果たす。",
+    sentenceReading: "しめい を はたす。",
+    sentenceMeaning: "Menunaikan misi."
+  },
+  {
+    part: 5,
+    kanji: "削る",
+    reading: "けずる",
+    meaning: "mengikis, memotong, mengurangi",
+    sentence: "予算を削る。",
+    sentenceReading: "よさん を けずる。",
+    sentenceMeaning: "Mengurangi anggaran."
+  },
+  {
+    part: 5,
+    kanji: "改める",
+    reading: "あらためる",
+    meaning: "memperbaiki, mengubah, meninjau kembali",
+    sentence: "態度を改める。",
+    sentenceReading: "たいど を あらためる。",
+    sentenceMeaning: "Memperbaiki sikap."
+  },
+  {
+    part: 6,
+    kanji: "至る",
+    reading: "いたる",
+    meaning: "mencapai, sampai pada, berujung pada",
+    sentence: "成功に至るまで努力した。",
+    sentenceReading: "せいこう に いたる まで どりょく した。",
+    sentenceMeaning: "Saya berusaha sampai berhasil."
+  },
+  {
+    part: 6,
+    kanji: "訪れる",
+    reading: "おとずれる",
+    meaning: "mengunjungi, datang (waktu/kejadian)",
+    sentence: "春が訪れる。",
+    sentenceReading: "はる が おとずれる。",
+    sentenceMeaning: "Musim semi tiba."
+  },
+  {
+    part: 6,
+    kanji: "扱う",
+    reading: "あつかう",
+    meaning: "menangani, memperlakukan, mengelola, membahas",
+    sentence: "この店では食品を丁寧に扱う。",
+    sentenceReading: "この みせ で は しょくひん を ていねい に あつかう。",
+    sentenceMeaning: "Di toko ini, mereka menangani makanan dengan hati-hati."
+  },
+  {
+    part: 6,
+    kanji: "導く",
+    reading: "みちびく",
+    meaning: "membimbing, memimpin, mengarahkan",
+    sentence: "先生は学生を正しい道に導く。",
+    sentenceReading: "せんせい は がくせい を ただしい みち に みちびく。",
+    sentenceMeaning: "Guru membimbing siswa ke jalan yang benar."
+  },
+  {
+    part: 6,
+    kanji: "略す",
+    reading: "りゃくす",
+    meaning: "menyingkat, menghilangkan, melewati",
+    sentence: "名前を略して呼ぶ。",
+    sentenceReading: "なまえ を りゃくして よぶ。",
+    sentenceMeaning: "Memanggil dengan nama singkat."
+  },
+  {
+    part: 6,
+    kanji: "占める",
+    reading: "しめる",
+    meaning: "menduduki, menempati, mengambil porsi",
+    sentence: "女性が全体の半分を占める。",
+    sentenceReading: "じょせい が ぜんたい の はんぶん を しめる。",
+    sentenceMeaning: "Perempuan menempati setengah dari total."
+  },
+  {
+    part: 6,
+    kanji: "属する",
+    reading: "ぞくする",
+    meaning: "termasuk, tergolong, menjadi bagian dari",
+    sentence: "彼はそのクラブに属している。",
+    sentenceReading: "かれ は その クラブ に ぞくしている。",
+    sentenceMeaning: "Dia termasuk dalam klub itu."
+  },
+  {
+    part: 6,
+    kanji: "与える",
+    reading: "あたえる",
+    meaning: "memberi, memberikan, menimbulkan (dampak)",
+    sentence: "良い影響を与える。",
+    sentenceReading: "よい えいきょう を あたえる。",
+    sentenceMeaning: "Memberikan pengaruh yang baik."
+  },
+  {
+    part: 6,
+    kanji: "補う",
+    reading: "おぎなう",
+    meaning: "melengkapi, menutupi kekurangan",
+    sentence: "不足を補う。",
+    sentenceReading: "ふそく を おぎなう。",
+    sentenceMeaning: "Menutupi kekurangan."
+  },
+  {
+    part: 6,
+    kanji: "誘う",
+    reading: "さそう",
+    meaning: "mengajak, membujuk, memancing",
+    sentence: "友達を遊びに誘う。",
+    sentenceReading: "ともだち を あそび に さそう。",
+    sentenceMeaning: "Mengajak teman bermain."
+  },
+  {
+    part: 6,
+    kanji: "祝う",
+    reading: "いわう",
+    meaning: "merayakan, memberi selamat",
+    sentence: "誕生日を祝う。",
+    sentenceReading: "たんじょうび を いわう。",
+    sentenceMeaning: "Merayakan ulang tahun."
+  },
+  {
+    part: 6,
+    kanji: "敗れる",
+    reading: "やぶれる",
+    meaning: "kalah, dikalahkan, gagal",
+    sentence: "試合で敗れる。",
+    sentenceReading: "しあい で やぶれる。",
+    sentenceMeaning: "Kalah dalam pertandingan."
+  },
+  {
+    part: 6,
+    kanji: "頼る",
+    reading: "たよる",
+    meaning: "bergantung, mengandalkan",
+    sentence: "親に頼る。",
+    sentenceReading: "おや に たよる。",
+    sentenceMeaning: "Bergantung pada orang tua."
+  },
+  {
+    part: 6,
+    kanji: "触れる",
+    reading: "ふれる",
+    meaning: "menyentuh, menyinggung, terkena",
+    sentence: "触れると危険です。",
+    sentenceReading: "ふれる と きけん です。",
+    sentenceMeaning: "Berbahaya jika tersentuh."
+  },
+  {
+    part: 6,
+    kanji: "暮らす",
+    reading: "くらす",
+    meaning: "hidup, menjalani kehidupan",
+    sentence: "都会で暮らす。",
+    sentenceReading: "とかい で くらす。",
+    sentenceMeaning: "Hidup di kota."
+  },
+  {
+    part: 6,
+    kanji: "拾う",
+    reading: "ひろう",
+    meaning: "mengambil, memungut",
+    sentence: "道でゴミを拾う。",
+    sentenceReading: "みち で ゴミ を ひろう。",
+    sentenceMeaning: "Memungut sampah di jalan."
+  },
+  {
+    part: 6,
+    kanji: "絞る",
+    reading: "しぼる",
+    meaning: "memeras, memeras keringat, mempersempit",
+    sentence: "情報を絞る。",
+    sentenceReading: "じょうほう を しぼる。",
+    sentenceMeaning: "Mempersempit informasi."
+  },
+  {
+    part: 6,
+    kanji: "握る",
+    reading: "にぎる",
+    meaning: "menggenggam, memegang, menguasai",
+    sentence: "手を握る。",
+    sentenceReading: "て を にぎる。",
+    sentenceMeaning: "Menggenggam tangan."
+  },
+  {
+    part: 6,
+    kanji: "招く",
+    reading: "まねく",
+    meaning: "mengundang, mendatangkan",
+    sentence: "友達をパーティーに招く。",
+    sentenceReading: "ともだち を パーティー に まねく。",
+    sentenceMeaning: "Mengundang teman ke pesta."
+  },
+  {
+    part: 6,
+    kanji: "散る",
+    reading: "ちる",
+    meaning: "gugur, berserakan, layu",
+    sentence: "桜の花が散る。",
+    sentenceReading: "さくら の はな が ちる。",
+    sentenceMeaning: "Bunga sakura gugur."
+  },
+  {
+    part: 6,
+    kanji: "養う",
+    reading: "やしなう",
+    meaning: "memelihara, membesarkan, menafkahi, mengembangkan (kemampuan)",
+    sentence: "子どもを養う。",
+    sentenceReading: "こども を やしなう。",
+    sentenceMeaning: "Memelihara anak."
+  },
+  {
+    part: 6,
+    kanji: "迷う",
+    reading: "まよう",
+    meaning: "bingung, ragu, tersesat, bimbang",
+    sentence: "道に迷う。",
+    sentenceReading: "みち に まよう。",
+    sentenceMeaning: "Tersesat di jalan."
+  },
+  {
+    part: 6,
+    kanji: "抱える",
+    reading: "かかえる",
+    meaning: "memeluk, menanggung, memiliki (masalah/beban)",
+    sentence: "問題を抱える。",
+    sentenceReading: "もんだい を かかえる。",
+    sentenceMeaning: "Menanggung masalah."
+  },
+  {
+    part: 6,
+    kanji: "驚かせる",
+    reading: "おどろかせる",
+    meaning: "mengejutkan, membuat terkejut",
+    sentence: "友達を驚かせる。",
+    sentenceReading: "ともだち を おどろかせる。",
+    sentenceMeaning: "Mengejutkan teman."
+  },
+  {
+    part: 6,
+    kanji: "束ねる",
+    reading: "たばねる",
+    meaning: "mengikat jadi satu, mengelompokkan, menyatukan",
+    sentence: "書類を束ねる。",
+    sentenceReading: "しょるい を たばねる。",
+    sentenceMeaning: "Mengikat dokumen menjadi satu."
+  },
+  {
+    part: 6,
+    kanji: "捨てる",
+    reading: "すてる",
+    meaning: "membuang, meninggalkan, melepaskan",
+    sentence: "ゴミを捨てる。",
+    sentenceReading: "ゴミ を すてる。",
+    sentenceMeaning: "Membuang sampah."
+  },
+  {
+    part: 6,
+    kanji: "含める",
+    reading: "ふくめる",
+    meaning: "memasukkan, menyertakan, mengandung",
+    sentence: "税金を含める。",
+    sentenceReading: "ぜいきん を ふくめる。",
+    sentenceMeaning: "Menyertakan pajak."
+  },
+  {
+    part: 6,
+    kanji: "映る",
+    reading: "うつる",
+    meaning: "terpantul, terlihat, terekam (kamera)",
+    sentence: "鏡に映る。",
+    sentenceReading: "かがみ に うつる。",
+    sentenceMeaning: "Terpantul di cermin."
+  },
+  {
+    part: 6,
+    kanji: "見逃す",
+    reading: "みのがす",
+    meaning: "melewatkan, tidak menyadari, membiarkan lolos",
+    sentence: "試合を見逃す。",
+    sentenceReading: "しあい を みのがす。",
+    sentenceMeaning: "Melewatkan pertandingan."
+  },
+  {
+    part: 6,
+    kanji: "湿る",
+    reading: "しめる",
+    meaning: "lembap, basah, menjadi lembap",
+    sentence: "タオルが湿る。",
+    sentenceReading: "タオル が しめる。",
+    sentenceMeaning: "Handuk menjadi lembap."
+  },
+  {
+    part: 6,
+    kanji: "憎む",
+    reading: "にくむ",
+    meaning: "membenci, memusuhi",
+    sentence: "彼を憎む。",
+    sentenceReading: "かれ を にくむ。",
+    sentenceMeaning: "Membenci dia."
+  },
+  {
+    part: 6,
+    kanji: "混じる",
+    reading: "まじる",
+    meaning: "bercampur, tercampur",
+    sentence: "水に砂が混じる。",
+    sentenceReading: "みず に すな が まじる。",
+    sentenceMeaning: "Pasir tercampur dalam air."
+  },
+  {
+    part: 6,
+    kanji: "倒す",
+    reading: "たおす",
+    meaning: "menjatuhkan, menumbangkan, mengalahkan",
+    sentence: "敵を倒す。",
+    sentenceReading: "てき を たおす。",
+    sentenceMeaning: "Mengalahkan musuh."
+  },
+  {
+    part: 6,
+    kanji: "従う",
+    reading: "したがう",
+    meaning: "mengikuti, menaati, mematuhi",
+    sentence: "ルールに従う。",
+    sentenceReading: "ルール に したがう。",
+    sentenceMeaning: "Mengikuti aturan."
+  },
+  {
+    part: 6,
+    kanji: "迎える",
+    reading: "むかえる",
+    meaning: "menyambut, menjemput, menghadapi (waktu/kejadian)",
+    sentence: "新しい年を迎える。",
+    sentenceReading: "あたらしい とし を むかえる。",
+    sentenceMeaning: "Menyambut tahun baru."
+  },
+  {
+    part: 6,
+    kanji: "絶えず",
+    reading: "たえず",
+    meaning: "terus-menerus, tanpa henti, selalu",
+    sentence: "絶えず努力する。",
+    sentenceReading: "たえず どりょく する。",
+    sentenceMeaning: "Berusaha terus-menerus."
+  },
+  {
+    part: 6,
+    kanji: "絡まる",
+    reading: "からまる",
+    meaning: "terlilit, terjerat, kusut",
+    sentence: "紐が絡まる。",
+    sentenceReading: "ひも が からまる。",
+    sentenceMeaning: "Tali terlilit."
+  },
+  {
+    part: 6,
+    kanji: "省く",
+    reading: "はぶく",
+    meaning: "menghilangkan, menyingkirkan, mengecualikan",
+    sentence: "手間を省く。",
+    sentenceReading: "てま を はぶく。",
+    sentenceMeaning: "Menghilangkan pekerjaan yang tidak perlu."
+  },
+  {
+    part: 6,
+    kanji: "敬う",
+    reading: "うやまう",
+    meaning: "menghormati, menjunjung",
+    sentence: "先輩を敬う。",
+    sentenceReading: "せんぱい を うやまう。",
+    sentenceMeaning: "Menghormati senior."
+  },
+  {
+    part: 6,
+    kanji: "乱れる",
+    reading: "みだれる",
+    meaning: "kacau, berantakan, tidak teratur",
+    sentence: "風で髪が乱れる。",
+    sentenceReading: "かぜ で かみ が みだれる。",
+    sentenceMeaning: "Rambut berantakan karena angin."
+  },
+  {
+    part: 7,
+    kanji: "納める",
+    reading: "おさめる",
+    meaning: "membayar (pajak/iuran), menyerahkan, menyimpan, menenangkan",
+    sentence: "税金を納める。",
+    sentenceReading: "ぜいきん を おさめる。",
+    sentenceMeaning: "Membayar pajak."
+  },
+  {
+    part: 7,
+    kanji: "伴う",
+    reading: "ともなう",
+    meaning: "menyertai, disertai, mengiringi",
+    sentence: "危険を伴う仕事。",
+    sentenceReading: "きけん を ともなう しごと。",
+    sentenceMeaning: "Pekerjaan yang disertai risiko."
+  },
+  {
+    part: 7,
+    kanji: "焦げる",
+    reading: "こげる",
+    meaning: "hangus, gosong, terbakar",
+    sentence: "パンが焦げる。",
+    sentenceReading: "パン が こげる。",
+    sentenceMeaning: "Roti menjadi gosong."
+  },
+  {
+    part: 7,
+    kanji: "劣る",
+    reading: "おとる",
+    meaning: "lebih rendah, kalah, kurang dibandingkan",
+    sentence: "成績が他の生徒に劣る。",
+    sentenceReading: "せいせき が ほか の せいと に おとる。",
+    sentenceMeaning: "Nilai lebih rendah dari siswa lain."
+  },
+  {
+    part: 7,
+    kanji: "争う",
+    reading: "あらそう",
+    meaning: "bertengkar, bersaing, berkonflik",
+    sentence: "土地を争う。",
+    sentenceReading: "とち を あらそう。",
+    sentenceMeaning: "Bertengkar soal tanah."
+  },
+  {
+    part: 7,
+    kanji: "囲む",
+    reading: "かこむ",
+    meaning: "mengelilingi, mengepung, mengitari",
+    sentence: "テーブルを囲む。",
+    sentenceReading: "テーブル を かこむ。",
+    sentenceMeaning: "Mengelilingi meja."
+  },
+  {
+    part: 7,
+    kanji: "恵まれる",
+    reading: "めぐまれる",
+    meaning: "diberkahi, beruntung, mendapat anugerah",
+    sentence: "恵まれた環境で育つ。",
+    sentenceReading: "めぐまれた かんきょう で そだつ。",
+    sentenceMeaning: "Tumbuh dalam lingkungan yang diberkahi."
+  },
+  {
+    part: 7,
+    kanji: "救う",
+    reading: "すくう",
+    meaning: "menyelamatkan, menolong",
+    sentence: "命を救う。",
+    sentenceReading: "いのち を すくう。",
+    sentenceMeaning: "Menyelamatkan nyawa."
+  },
+  {
+    part: 7,
+    kanji: "凍る",
+    reading: "こおる",
+    meaning: "membeku, beku, dingin membeku",
+    sentence: "川が凍る。",
+    sentenceReading: "かわ が こおる。",
+    sentenceMeaning: "Sungai membeku."
   }
 ];
 
@@ -1096,7 +2257,7 @@ function loadPart() {
 function render() {
   const card = cards[index];
 
-  document.getElementById("kanji").textContent = card.kanji;
+document.getElementById("kanji").textContent = card.kanji;
   document.getElementById("reading").textContent = card.reading;
   document.getElementById("meaning").textContent = card.meaning;
 
