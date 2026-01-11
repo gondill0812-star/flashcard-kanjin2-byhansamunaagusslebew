@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcard Kanji</title>
+
+  <style>
+    body {
+      background: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background: #1e1e1e;
+      padding: 20px;
+      width: 320px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .kanji {
+      font-size: 64px;
+      margin-bottom: 15px;
+    }
+
+    .text {
+      font-size: 18px;
+      margin: 6px 0;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    button, select {
+      margin: 6px;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 5px;
+      background: #444;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <select id="partSelect" onchange="changePart()">
+    <option value="1">Part 1</option>
+    <option value="2">Part 2</option>
+    <option value="3">Part 3</option>
+  </select>
+
+  <div id="kanji" class="kanji">漢字</div>
+
+  <div id="reading" class="text hidden"></div>
+  <div id="meaning" class="text hidden"></div>
+  <div id="sentence" class="text hidden"></div>
+  <div id="sentence-reading" class="text hidden"></div>
+  <div id="sentence-meaning" class="text hidden"></div>
+
+
+  <button onclick="reveal()">Reveal</button><br>
+  <button onclick="prevCard()">Prev</button>
+  <button onclick="nextCard()">Next</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
