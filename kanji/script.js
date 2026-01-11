@@ -1,0 +1,770 @@
+const flashcards = [
+  {
+    part: 1,
+    kanji: "参照",
+    reading: "さんしょう",
+    meaning: "rujukan, referensi, melihat sebagai acuan",
+    sentence: "詳細については、下記の資料を参照してください。",
+    sentenceReading: "しょうさい に ついて は、かき の しりょう を さんしょう して ください。",
+    sentenceMeaning: "Untuk rincian lebih lanjut, silakan merujuk pada dokumen di bawah ini."
+  },
+  {
+    part: 1,
+    kanji: "距離",
+    reading: "きょり",
+    meaning: "jarak; selisih; perbedaan (hubungan)",
+    sentence: "両国の文化的な距離は依然として大きい。",
+    sentenceReading: "りょうこく の ぶんかてき な きょり は いぜん として おおきい。",
+    sentenceMeaning: "Jarak budaya antara kedua negara tersebut masih tetap besar."
+  },
+  {
+    part: 1,
+    kanji: "願望",
+    reading: "がんぼう",
+    meaning: "keinginan, hasrat, ambisi",
+    sentence: "若者の願望は社会の変化を反映している。",
+    sentenceReading: "わかもの の がんぼう は しゃかい の へんか を はんえい して いる。",
+    sentenceMeaning: "Hasrat kaum muda mencerminkan perubahan masyarakat."
+  },
+  {
+    part: 1,
+    kanji: "怪しい",
+    reading: "あやしい",
+    meaning: "mencurigakan, meragukan, aneh, tidak jelas",
+    sentence: "その取引には怪しい点がいくつか見受けられる。",
+    sentenceReading: "その とりひき に は あやしい てん が いくつか みうけられる。",
+    sentenceMeaning: "Transaksi tersebut memiliki beberapa hal yang mencurigakan."
+  },
+  {
+    part: 1,
+    kanji: "油断",
+    reading: "ゆだん",
+    meaning: "lengah, ceroboh, kurang waspada",
+    sentence: "一瞬の油断が重大な事故につながることがある。",
+    sentenceReading: "いっしゅん の ゆだん が じゅうだい な じこ に つながる こと が ある。",
+    sentenceMeaning: "Kelengahan sesaat bisa berujung pada kecelakaan serius."
+  },
+  {
+    part: 1,
+    kanji: "恥",
+    reading: "はじ",
+    meaning: "malu, aib, rasa hina",
+    sentence: "不正行為は組織全体の恥となる。",
+    sentenceReading: "ふせい こうい は そしき ぜんたい の はじ と なる。",
+    sentenceMeaning: "Tindakan tidak jujur menjadi aib bagi seluruh organisasi."
+  },
+  {
+    part: 1,
+    kanji: "指摘",
+    reading: "してき",
+    meaning: "menunjukkan, menyoroti, mengkritik",
+    sentence: "専門家は制度の問題点を指摘した。",
+    sentenceReading: "せんもんか は せいど の もんだいてん を してき した。",
+    sentenceMeaning: "Para ahli menyoroti masalah dalam sistem tersebut."
+  },
+  {
+    part: 1,
+    kanji: "投票",
+    reading: "とうひょう",
+    meaning: "pemungutan suara, voting",
+    sentence: "国民は選挙で代表者に投票する。",
+    sentenceReading: "こくみん は せんきょ で だいひょうしゃ に とうひょう する。",
+    sentenceMeaning: "Warga memberikan suara kepada wakilnya dalam pemilu."
+  },
+  {
+    part: 1,
+    kanji: "批評",
+    reading: "ひひょう",
+    meaning: "kritik, ulasan, penilaian",
+    sentence: "その作品は多くの批評家から高い評価を受けた。",
+    sentenceReading: "その さくひん は おおく の ひひょうか から たかい ひょうか を うけた。",
+    sentenceMeaning: "Karya tersebut mendapat penilaian tinggi dari para kritikus."
+  },
+  {
+    part: 1,
+    kanji: "催し",
+    reading: "もよおし",
+    meaning: "acara, kegiatan, penyelenggaraan",
+    sentence: "地域交流を目的とした催しが開催された。",
+    sentenceReading: "ちいき こうりゅう を もくてき と した もよおし が かいさい された。",
+    sentenceMeaning: "Acara untuk pertukaran komunitas telah diselenggarakan."
+  },
+  {
+    part: 1,
+    kanji: "討論",
+    reading: "とうろん",
+    meaning: "diskusi, debat, perdebatan",
+    sentence: "公開の場で活発な討論が行われた。",
+    sentenceReading: "こうかい の ば で かっぱつ な とうろん が おこなわれた。",
+    sentenceMeaning: "Diskusi aktif dilakukan di forum terbuka."
+  },
+  {
+    part: 1,
+    kanji: "混乱",
+    reading: "こんらん",
+    meaning: "kekacauan, kebingungan, ketidakteraturan",
+    sentence: "突然の変更により現場は混乱した。",
+    sentenceReading: "とつぜん の へんこう に より げんば は こんらん した。",
+    sentenceMeaning: "Perubahan mendadak menyebabkan kekacauan di lapangan."
+  },
+  {
+    part: 1,
+    kanji: "硬貨",
+    reading: "こうか",
+    meaning: "koin, uang logam",
+    sentence: "自動販売機は一部の硬貨しか使用できない。",
+    sentenceReading: "じどうはんばいき は いちぶ の こうか しか しよう できない。",
+    sentenceMeaning: "Mesin penjual otomatis hanya menerima koin tertentu."
+  },
+  {
+    part: 1,
+    kanji: "容姿",
+    reading: "ようし",
+    meaning: "penampilan, rupa, paras",
+    sentence: "人を容姿だけで判断すべきではない。",
+    sentenceReading: "ひと を ようし だけ で はんだん すべき で は ない。",
+    sentenceMeaning: "Seseorang tidak seharusnya dinilai hanya dari penampilannya."
+  },
+  {
+    part: 1,
+    kanji: "講師",
+    reading: "こうし",
+    meaning: "pengajar, dosen, instruktur",
+    sentence: "外部から専門の講師が招かれた。",
+    sentenceReading: "がいぶ から せんもん の こうし が まねかれた。",
+    sentenceMeaning: "Instruktur ahli diundang dari luar."
+  },
+  {
+    part: 1,
+    kanji: "密閉",
+    reading: "みっぺい",
+    meaning: "tertutup rapat, kedap, penyegelan",
+    sentence: "容器は完全に密閉されている。",
+    sentenceReading: "ようき は かんぜん に みっぺい されて いる。",
+    sentenceMeaning: "Wadah tersebut tertutup rapat sepenuhnya."
+  },
+  {
+    part: 1,
+    kanji: "快い",
+    reading: "こころよい",
+    meaning: "menyenangkan, nyaman, enak dirasakan",
+    sentence: "快い返事をいただき、感謝している。",
+    sentenceReading: "こころよい へんじ を いただき、かんしゃ して いる。",
+    sentenceMeaning: "Saya berterima kasih atas jawaban yang menyenangkan."
+  },
+  {
+    part: 1,
+    kanji: "鮮やか",
+    reading: "あざやか",
+    meaning: "cerah, jelas, mencolok, tajam",
+    sentence: "彼女は鮮やかな手法で問題を解決した。",
+    sentenceReading: "かのじょ は あざやか な しゅほう で もんだい を かいけつ した。",
+    sentenceMeaning: "Ia menyelesaikan masalah dengan cara yang cemerlang."
+  },
+  {
+    part: 1,
+    kanji: "貴重",
+    reading: "きちょう",
+    meaning: "berharga, bernilai, langka",
+    sentence: "この資料は研究にとって貴重である。",
+    sentenceReading: "この しりょう は けんきゅう に とって きちょう で ある。",
+    sentenceMeaning: "Dokumen ini sangat berharga bagi penelitian."
+  },
+  {
+    part: 1,
+    kanji: "和やか",
+    reading: "なごやか",
+    meaning: "ramah, hangat, damai, bersahabat, suasana tenang",
+    sentence: "会議は和やかな雰囲気で進められた。",
+    sentenceReading: "かいぎ は なごやか な ふんいき で すすめられた。",
+    sentenceMeaning: "Rapat berlangsung dalam suasana yang ramah dan hangat."
+  },
+  {
+    part: 1,
+    kanji: "好調",
+    reading: "こうちょう",
+    meaning: "kondisi baik, lancar, stabil, performa bagus",
+    sentence: "売上は今期も好調を維持している。",
+    sentenceReading: "うりあげ は こんき も こうちょう を いじしている。",
+    sentenceMeaning: "Penjualan tetap dalam kondisi baik pada kuartal ini."
+  },
+  {
+    part: 1,
+    kanji: "怖い",
+    reading: "こわい",
+    meaning: "takut, menakutkan, mengerikan, mengkhawatirkan",
+    sentence: "夜道を一人で歩くのは怖い。",
+    sentenceReading: "よみち を ひとり で あるく の は こわい。",
+    sentenceMeaning: "Berjalan sendirian di jalan malam itu menakutkan."
+  },
+  {
+    part: 1,
+    kanji: "保証",
+    reading: "ほしょう",
+    meaning: "jaminan, garansi, penjaminan",
+    sentence: "この製品には1年間の保証が付いている。",
+    sentenceReading: "この せいひん に は いちねんかん の ほしょう が ついている。",
+    sentenceMeaning: "Produk ini dilengkapi dengan garansi satu tahun."
+  },
+  {
+    part: 1,
+    kanji: "分析",
+    reading: "ぶんせき",
+    meaning: "analisis, penguraian, penelaahan",
+    sentence: "データを細かく分析して報告書を作成した。",
+    sentenceReading: "データ を こまかく ぶんせき して ほうこくしょ を さくせい した。",
+    sentenceMeaning: "Data dianalisis secara detail dan laporan dibuat."
+  },
+  {
+    part: 1,
+    kanji: "拡張",
+    reading: "かくちょう",
+    meaning: "perluasan, ekspansi, pengembangan",
+    sentence: "会社は事業を海外へ拡張した。",
+    sentenceReading: "かいしゃ は じぎょう を かいがい へ かくちょう した。",
+    sentenceMeaning: "Perusahaan memperluas bisnisnya ke luar negeri."
+  },
+  {
+    part: 1,
+    kanji: "警備",
+    reading: "けいび",
+    meaning: "penjagaan, pengamanan, keamanan",
+    sentence: "イベント会場では厳重な警備が行われていた。",
+    sentenceReading: "イベント かいじょう では げんじゅう な けいび が おこなわれていた。",
+    sentenceMeaning: "Di lokasi acara, pengamanan dilakukan secara ketat."
+  },
+  {
+    part: 1,
+    kanji: "負担",
+    reading: "ふたん",
+    meaning: "beban, tanggungan, tekanan, beban biaya",
+    sentence: "医療費の負担が家計を圧迫している。",
+    sentenceReading: "いりょうひ の ふたん が かけい を あっぱく している。",
+    sentenceMeaning: "Beban biaya pengobatan menekan keuangan rumah tangga."
+  },
+  {
+    part: 1,
+    kanji: "強火",
+    reading: "つよび",
+    meaning: "api besar, panas tinggi (memasak)",
+    sentence: "強火で肉を焼くと外は焦げる。",
+    sentenceReading: "つよび で にく を やく と そと は こげる。",
+    sentenceMeaning: "Jika memanggang daging dengan api besar, bagian luar akan gosong."
+  },
+  {
+    part: 1,
+    kanji: "濃い",
+    reading: "こい",
+    meaning: "pekat, kental, kuat (rasa/warna), tebal",
+    sentence: "このコーヒーは味が濃い。",
+    sentenceReading: "この コーヒー は あじ が こい。",
+    sentenceMeaning: "Kopi ini rasanya kuat/pekat."
+  },
+  {
+    part: 1,
+    kanji: "企画",
+    reading: "きかく",
+    meaning: "perencanaan, rancangan, proyek",
+    sentence: "新しいイベントの企画を担当した。",
+    sentenceReading: "あたらしい イベント の きかく を たんとう した。",
+    sentenceMeaning: "Saya bertanggung jawab atas perencanaan acara baru."
+  },
+  {
+    part: 1,
+    kanji: "再度",
+    reading: "さいど",
+    meaning: "sekali lagi, ulang, untuk kedua kalinya",
+    sentence: "問題が解決しなかったので、再度確認した。",
+    sentenceReading: "もんだい が かいけつ しなかった ので、さいど かくにん した。",
+    sentenceMeaning: "Karena masalah belum terselesaikan, saya memeriksanya sekali lagi."
+  },
+  {
+    part: 1,
+    kanji: "圧倒的",
+    reading: "あっとうてき",
+    meaning: "sangat unggul, luar biasa, dominan, overwhelming",
+    sentence: "彼の演技は圧倒的だった。",
+    sentenceReading: "かれ の えんぎ は あっとうてき だった。",
+    sentenceMeaning: "Aksinya sungguh luar biasa."
+  },
+  {
+    part: 1,
+    kanji: "損害",
+    reading: "そんがい",
+    meaning: "kerugian, kerusakan, kerugian materi",
+    sentence: "台風で建物に大きな損害が出た。",
+    sentenceReading: "たいふう で たてもの に おおきな そんがい が でた。",
+    sentenceMeaning: "Bangunan mengalami kerusakan besar akibat topan."
+  },
+  {
+    part: 1,
+    kanji: "柔軟",
+    reading: "じゅうなん",
+    meaning: "fleksibel, lentur, mudah menyesuaikan",
+    sentence: "柔軟な考え方が求められる。",
+    sentenceReading: "じゅうなん な かんがえかた が もとめられる。",
+    sentenceMeaning: "Diperlukan pola pikir yang fleksibel."
+  },
+  {
+    part: 1,
+    kanji: "求人",
+    reading: "きゅうじん",
+    meaning: "lowongan kerja, perekrutan",
+    sentence: "会社は新しいスタッフの求人を出した。",
+    sentenceReading: "かいしゃ は あたらしい スタッフ の きゅうじん を だした。",
+    sentenceMeaning: "Perusahaan mengumumkan lowongan untuk staf baru."
+  },
+  {
+    part: 1,
+    kanji: "荒い",
+    reading: "あらい",
+    meaning: "kasar, ganas, liar, buruk (cuaca/gelombang), kasar (tekstur)",
+    sentence: "海の波が荒くて船が揺れた。",
+    sentenceReading: "うみ の なみ が あらくて ふね が ゆれた。",
+    sentenceMeaning: "Ombak laut begitu besar hingga kapal terguncang."
+  },
+  {
+    part: 1,
+    kanji: "冷蔵庫",
+    reading: "れいぞうこ",
+    meaning: "lemari es, kulkas",
+    sentence: "食材は冷蔵庫に保存してください。",
+    sentenceReading: "しょくざい は れいぞうこ に ほぞん して ください。",
+    sentenceMeaning: "Simpan bahan makanan di lemari es."
+  },
+  {
+    part: 1,
+    kanji: "抽選",
+    reading: "ちゅうせん",
+    meaning: "undian, pengundian, lotere",
+    sentence: "参加者は抽選で決められた。",
+    sentenceReading: "さんかしゃ は ちゅうせん で きめられた。",
+    sentenceMeaning: "Peserta dipilih melalui undian."
+  },
+  {
+    part: 1,
+    kanji: "演技",
+    reading: "えんぎ",
+    meaning: "akting, peran, penampilan (berpura-pura)",
+    sentence: "彼女の演技は非常に自然だった。",
+    sentenceReading: "かのじょ の えんぎ は ひじょう に しぜん だった。",
+    sentenceMeaning: "Aksinya sangat alami."
+  },
+  {
+    part: 2,
+    kanji: "精算",
+    reading: "せいさん",
+    meaning: "penyelesaian pembayaran, perhitungan akhir, pelunasan",
+    sentence: "旅行の費用は帰宅時に精算した。",
+    sentenceReading: "りょこう の ひよう は きたくじ に せいさん した。",
+    sentenceMeaning: "Biaya perjalanan dilunasi saat pulang."
+  },
+  {
+    part: 2,
+    kanji: "比較的",
+    reading: "ひかくてき",
+    meaning: "relatif, secara perbandingan, cukup",
+    sentence: "今日の天気は比較的穏やかだ。",
+    sentenceReading: "きょう の てんき は ひかくてき おだやか だ。",
+    sentenceMeaning: "Cuaca hari ini relatif tenang."
+  },
+  {
+    part: 2,
+    kanji: "系統",
+    reading: "けいとう",
+    meaning: "sistem, garis keturunan, aliran, kelompok (teknis)",
+    sentence: "この植物は特定の系統に属している。",
+    sentenceReading: "この しょくぶつ は とくてい の けいとう に ぞくしている。",
+    sentenceMeaning: "Tumbuhan ini termasuk dalam garis keturunan tertentu."
+  },
+  {
+    part: 2,
+    kanji: "趣味",
+    reading: "しゅみ",
+    meaning: "hobi, kegemaran, selera, minat",
+    sentence: "読書は彼の趣味の一つだ。",
+    sentenceReading: "どくしょ は かれ の しゅみ の ひとつ だ。",
+    sentenceMeaning: "Membaca adalah salah satu hobinya."
+  },
+  {
+    part: 2,
+    kanji: "腕",
+    reading: "うで",
+    meaning: "lengan, kemampuan, keahlian, keterampilan",
+    sentence: "彼は料理の腕が確かだ。",
+    sentenceReading: "かれ は りょうり の うで が たしか だ。",
+    sentenceMeaning: "Keahliannya dalam memasak memang terjamin."
+  },
+  {
+    part: 2,
+    kanji: "詳細",
+    reading: "しょうさい",
+    meaning: "detail, rincian, keterangan lengkap",
+    sentence: "契約内容の詳細を確認してください。",
+    sentenceReading: "けいやく ないよう の しょうさい を かくにん して ください。",
+    sentenceMeaning: "Silakan periksa rincian isi kontrak."
+  },
+  {
+    part: 2,
+    kanji: "在籍",
+    reading: "ざいせき",
+    meaning: "terdaftar, tercatat sebagai anggota, masih bergabung",
+    sentence: "彼は大学に在籍している学生だ。",
+    sentenceReading: "かれ は だいがく に ざいせき している がくせい だ。",
+    sentenceMeaning: "Dia adalah mahasiswa yang terdaftar di universitas."
+  },
+  {
+    part: 2,
+    kanji: "疲労",
+    reading: "ひろう",
+    meaning: "kelelahan, keletihan, keausan",
+    sentence: "長時間の作業で疲労がたまった。",
+    sentenceReading: "ちょうじかん の さぎょう で ひろう が たまった。",
+    sentenceMeaning: "Kelelahan menumpuk akibat bekerja berjam-jam."
+  },
+  {
+    part: 2,
+    kanji: "福祉",
+    reading: "ふくし",
+    meaning: "kesejahteraan sosial, bantuan sosial",
+    sentence: "地域の福祉制度を学んだ。",
+    sentenceReading: "ちいき の ふくし せいど を まなんだ。",
+    sentenceMeaning: "Saya mempelajari sistem kesejahteraan sosial di daerah tersebut."
+  },
+  {
+    part: 2,
+    kanji: "模範",
+    reading: "もはん",
+    meaning: "teladan, contoh ideal, model",
+    sentence: "彼の行動は模範的だ。",
+    sentenceReading: "かれ の こうどう は もはんてき だ。",
+    sentenceMeaning: "Tindakannya adalah teladan."
+  },
+  {
+    part: 2,
+    kanji: "機嫌",
+    reading: "きげん",
+    meaning: "suasana hati, perasaan, kondisi (baik/buruk)",
+    sentence: "子供の機嫌が良いと家族も幸せだ。",
+    sentenceReading: "こども の きげん が よい と かぞく も しあわせ だ。",
+    sentenceMeaning: "Jika suasana hati anak baik, keluarga pun bahagia."
+  },
+  {
+    part: 2,
+    kanji: "削除",
+    reading: "さくじょ",
+    meaning: "penghapusan, penghilangan, delete",
+    sentence: "不要なファイルを削除した。",
+    sentenceReading: "ふよう な ファイル を さくじょ した。",
+    sentenceMeaning: "File yang tidak perlu telah dihapus."
+  },
+  {
+    part: 2,
+    kanji: "険しい",
+    reading: "けわしい",
+    meaning: "curam, terjal, berat, keras, sulit (situasi)",
+    sentence: "険しい山道を登った。",
+    sentenceReading: "けわしい やまみち を のぼった。",
+    sentenceMeaning: "Saya mendaki jalan gunung yang terjal."
+  },
+  {
+    part: 2,
+    kanji: "研修",
+    reading: "けんしゅう",
+    meaning: "pelatihan, pembekalan, training",
+    sentence: "新人研修が明日から始まる。",
+    sentenceReading: "しんじん けんしゅう が あした から はじまる。",
+    sentenceMeaning: "Pelatihan untuk karyawan baru dimulai besok."
+  },
+  {
+    part: 2,
+    kanji: "柔らかい",
+    reading: "やわらかい",
+    meaning: "lembut, lunak, empuk, fleksibel, halus",
+    sentence: "このクッションは非常に柔らかい。",
+    sentenceReading: "この クッション は ひじょう に やわらかい。",
+    sentenceMeaning: "Bantal ini sangat empuk/lembut."
+  },
+  {
+    part: 2,
+    kanji: "農薬",
+    reading: "のうやく",
+    meaning: "pestisida, obat pertanian",
+    sentence: "農薬の使用には注意が必要だ。",
+    sentenceReading: "のうやく の しよう に は ちゅうい が ひつよう だ。",
+    sentenceMeaning: "Perlu berhati-hati dalam penggunaan pestisida."
+  },
+  {
+    part: 2,
+    kanji: "厚かましい",
+    reading: "あつかましい",
+    meaning: "tidak tahu malu, lancang, berani kurang ajar",
+    sentence: "彼の要求は厚かましいと思った。",
+    sentenceReading: "かれ の ようきゅう は あつかましい と おもった。",
+    sentenceMeaning: "Saya merasa permintaannya sangat lancang."
+  },
+  {
+    part: 2,
+    kanji: "背骨",
+    reading: "せぼね",
+    meaning: "tulang belakang, tulang punggung",
+    sentence: "背骨を痛めないように注意する。",
+    sentenceReading: "せぼね を いためない よう に ちゅうい する。",
+    sentenceMeaning: "Berhati-hati agar tulang belakang tidak cedera."
+  },
+  {
+    part: 2,
+    kanji: "実践",
+    reading: "じっせん",
+    meaning: "praktik, penerapan langsung",
+    sentence: "理論だけでなく実践も重要だ。",
+    sentenceReading: "りろん だけ で なく じっせん も じゅうよう だ。",
+    sentenceMeaning: "Tidak hanya teori, praktik juga penting."
+  },
+  {
+    part: 2,
+    kanji: "衣装",
+    reading: "いしょう",
+    meaning: "kostum, pakaian pertunjukan, busana",
+    sentence: "舞台の衣装は豪華だった。",
+    sentenceReading: "ぶたい の いしょう は ごうか だった。",
+    sentenceMeaning: "Kostum di panggung sangat mewah."
+  },
+  {
+    part: 2,
+    kanji: "優秀",
+    reading: "ゆうしゅう",
+    meaning: "unggul, sangat baik, berprestasi, cakap",
+    sentence: "彼は優秀な成績で卒業した。",
+    sentenceReading: "かれ は ゆうしゅう な せいせき で そつぎょう した。",
+    sentenceMeaning: "Dia lulus dengan prestasi yang sangat baik."
+  },
+  {
+    part: 2,
+    kanji: "簡潔",
+    reading: "かんけつ",
+    meaning: "singkat, padat, jelas, tidak bertele-tele",
+    sentence: "報告は簡潔にまとめるべきだ。",
+    sentenceReading: "ほうこく は かんけつ に まとめる べき だ。",
+    sentenceMeaning: "Laporan harus diringkas secara singkat dan jelas."
+  },
+  {
+    part: 2,
+    kanji: "治療",
+    reading: "ちりょう",
+    meaning: "perawatan medis, pengobatan, terapi",
+    sentence: "早期に治療を受けることが重要だ。",
+    sentenceReading: "そうき に ちりょう を うける こと が じゅうよう だ。",
+    sentenceMeaning: "Menerima pengobatan sejak dini itu penting."
+  },
+  {
+    part: 2,
+    kanji: "総額",
+    reading: "そうがく",
+    meaning: "jumlah total, total keseluruhan",
+    sentence: "旅行費用の総額を計算した。",
+    sentenceReading: "りょこう ひよう の そうがく を けいさん した。",
+    sentenceMeaning: "Saya menghitung total biaya perjalanan."
+  },
+  {
+    part: 2,
+    kanji: "現象",
+    reading: "げんしょう",
+    meaning: "fenomena, gejala yang tampak",
+    sentence: "虹は自然の美しい現象だ。",
+    sentenceReading: "にじ は しぜん の うつくしい げんしょう だ。",
+    sentenceMeaning: "Pelangi adalah fenomena alam yang indah."
+  },
+  {
+    part: 2,
+    kanji: "拒否",
+    reading: "きょひ",
+    meaning: "penolakan, menolak, refusal",
+    sentence: "彼の提案は拒否された。",
+    sentenceReading: "かれ の ていあん は きょひ された。",
+    sentenceMeaning: "Usulnya ditolak."
+  },
+  {
+    part: 2,
+    kanji: "症状",
+    reading: "しょうじょう",
+    meaning: "gejala (penyakit), simptom",
+    sentence: "発熱や咳は風邪の一般的な症状だ。",
+    sentenceReading: "はつねつ や せき は かぜ の いっぱんてき な しょうじょう だ。",
+    sentenceMeaning: "Demam dan batuk adalah gejala umum flu."
+  },
+  {
+    part: 2,
+    kanji: "憎い",
+    reading: "にくい",
+    meaning: "benci, menyebalkan, menjengkelkan, kejam",
+    sentence: "敵の行動が憎いと思った。",
+    sentenceReading: "てき の こうどう が にくい と おもった。",
+    sentenceMeaning: "Saya merasa tindakan musuh sangat menyebalkan."
+  },
+  {
+    part: 2,
+    kanji: "省略",
+    reading: "しょうりゃく",
+    meaning: "penyingkatan, penghilangan, pengabaian",
+    sentence: "長い文章は省略して書いた。",
+    sentenceReading: "ながい ぶんしょう は しょうりゃく して かいた。",
+    sentenceMeaning: "Saya menulis dengan menyingkat kalimat yang panjang."
+  },
+  {
+    part: 2,
+    kanji: "行事",
+    reading: "ぎょうじ",
+    meaning: "acara, kegiatan resmi, perayaan",
+    sentence: "学校の行事に参加した。",
+    sentenceReading: "がっこう の ぎょうじ に さんか した。",
+    sentenceMeaning: "Saya ikut serta dalam acara sekolah."
+  },
+  {
+    part: 2,
+    kanji: "損失",
+    reading: "そんしつ",
+    meaning: "kerugian, kehilangan, loss",
+    sentence: "地震で大きな損失が出た。",
+    sentenceReading: "じしん で おおきな そんしつ が でた。",
+    sentenceMeaning: "Terjadi kerugian besar akibat gempa."
+  },
+  {
+    part: 2,
+    kanji: "志望",
+    reading: "しぼう",
+    meaning: "aspirasi, keinginan kuat, pilihan (sekolah/pekerjaan)",
+    sentence: "志望校に合格できて嬉しい。",
+    sentenceReading: "しぼうこう に ごうかく できて うれしい。",
+    sentenceMeaning: "Saya senang bisa diterima di sekolah impian."
+  },
+  {
+    part: 2,
+    kanji: "幼い",
+    reading: "おさない",
+    meaning: "kecil, masih kanak-kanak, belum dewasa",
+    sentence: "幼い頃の思い出が懐かしい。",
+    sentenceReading: "おさない ころ の おもいで が なつかしい。",
+    sentenceMeaning: "Saya merindukan kenangan masa kecil."
+  },
+  {
+    part: 2,
+    kanji: "布",
+    reading: "ぬの",
+    meaning: "kain, bahan tekstil",
+    sentence: "この布は肌触りが良い。",
+    sentenceReading: "この ぬの は はだざわり が よい。",
+    sentenceMeaning: "Kain ini nyaman saat disentuh."
+  },
+  {
+    part: 2,
+    kanji: "握手",
+    reading: "あくしゅ",
+    meaning: "jabat tangan",
+    sentence: "会議の前に握手を交わした。",
+    sentenceReading: "かいぎ の まえ に あくしゅ を かわした。",
+    sentenceMeaning: "Kami saling berjabat tangan sebelum rapat."
+  },
+  {
+    part: 2,
+    kanji: "処理",
+    reading: "しょり",
+    meaning: "pengolahan, penanganan, pemrosesan, penyelesaian",
+    sentence: "データを正確に処理する。",
+    sentenceReading: "データ を せいかく に しょり する。",
+    sentenceMeaning: "Memproses data secara akurat."
+  },
+  {
+    part: 2,
+    kanji: "管理",
+    reading: "かんり",
+    meaning: "manajemen, pengelolaan, pengawasan",
+    sentence: "プロジェクトの進捗を管理する。",
+    sentenceReading: "プロジェクト の しんちょく を かんり する。",
+    sentenceMeaning: "Mengelola kemajuan proyek."
+  },
+  {
+    part: 2,
+    kanji: "短編",
+    reading: "たんぺん",
+    meaning: "cerita pendek, karya pendek",
+    sentence: "短編小説を読んでリラックスした。",
+    sentenceReading: "たんぺん しょうせつ を よんで リラックス した。",
+    sentenceMeaning: "Saya bersantai dengan membaca cerita pendek."
+  },
+  {
+    part: 2,
+    kanji: "平等",
+    reading: "びょうどう",
+    meaning: "setara, sama rata, kesetaraan",
+    sentence: "すべての人に平等な権利がある。",
+    sentenceReading: "すべて の ひと に びょうどう な けんり が ある。",
+    sentenceMeaning: "Semua orang memiliki hak yang setara."
+  },
+  {
+    part: 2,
+    kanji: "領収書",
+    reading: "りょうしゅうしょ",
+    meaning: "tanda terima, kwitansi",
+    sentence: "支払い後に領収書をもらった。",
+    sentenceReading: "しはらい ご に りょうしゅうしょ を もらった。",
+    sentenceMeaning: "Saya menerima kwitansi setelah membayar."
+  }
+];
+
+let currentPart = 1;
+let cards = [];
+let index = 0;
+
+function loadPart() {
+  cards = flashcards.filter(c => c.part === currentPart);
+  index = 0;
+  render();
+}
+
+function render() {
+  const card = cards[index];
+
+  document.getElementById("kanji").textContent = card.kanji;
+  document.getElementById("reading").textContent = card.reading;
+  document.getElementById("meaning").textContent = card.meaning;
+
+  document.getElementById("sentence").textContent = card.sentence;
+  document.getElementById("sentence-reading").textContent = card.sentenceReading;
+  document.getElementById("sentence-meaning").textContent = card.sentenceMeaning;
+
+  hideAll();
+}
+
+function hideAll() {
+  document.getElementById("reading").classList.add("hidden");
+  document.getElementById("meaning").classList.add("hidden");
+  document.getElementById("sentence").classList.add("hidden");
+  document.getElementById("sentence-reading").classList.add("hidden");
+  document.getElementById("sentence-meaning").classList.add("hidden");
+}
+
+function reveal() {
+  document.getElementById("reading").classList.remove("hidden");
+  document.getElementById("meaning").classList.remove("hidden");
+  document.getElementById("sentence").classList.remove("hidden");
+  document.getElementById("sentence-reading").classList.remove("hidden");
+  document.getElementById("sentence-meaning").classList.remove("hidden");
+}
+
+function nextCard() {
+  index = (index + 1) % cards.length;
+  render();
+}
+
+function prevCard() {
+  index = (index - 1 + cards.length) % cards.length;
+  render();
+}
+
+function changePart() {
+  currentPart = Number(document.getElementById("partSelect").value);
+  loadPart();
+}
+
+loadPart();
